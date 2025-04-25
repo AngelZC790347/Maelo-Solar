@@ -1,5 +1,5 @@
 <section
-  class="relative flex flex-col md:flex-row md:w-3/5 gap-20 py-32 md:py-60 mx-auto items-center"
+  class="relative flex flex-col md:flex-row md:w-3/5 gap-20 py-32 2xl:py-60 mx-auto items-center"
 >
   <header class="w-4/5">
     <img
@@ -25,14 +25,9 @@
         quibusdam sequi, voluptatibus velit ipsam placeat accusamus odio incidunt possimus id
         assumenda quae aliquid ullam! Itaque, ducimus?
       </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id aliquid, non rem hic cumque,
-        corrupti temporibus blanditiis fugiat quo itaque est quod esse fugit! Optio eum officia ad
-        eaque beatae!
-      </p>
     </article>
   </main>
-  <footer class="w-full md:absolute md:-bottom-56 bg-light p-20">
+  <footer class="w-full md:absolute md:-bottom-44 bg-light p-20 2xl:py-20 py-10">
     <ul class="flex md:flex-row flex-col md:gap-5 gap-10 justify-evenly">
       <li class="flex flex-col gap-5 items-center">
         <svg
@@ -98,9 +93,13 @@
     height: 100px;
     stroke: var(--color-dark);
   }
+
   span {
     font-size: 2rem;
     text-align: center;
     color: var(--color-dark);
+    @media screen and (max-width: 2000px) {
+      font-size: 1rem;
+    }
   }
 </style>
