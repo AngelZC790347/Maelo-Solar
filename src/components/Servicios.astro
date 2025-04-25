@@ -1,0 +1,92 @@
+---
+import ServiceCard from "../components/ServiceCard.astro";
+---
+
+<main
+  class="bg-[url('/imagenes/fondo-pasto.jpg')] bg-fixed bg-no-repeat bg-cover bg-bottom pt-10 md:pt-72 pb-14 gap-20"
+>
+  <section class="flex flex-col items-center my-20 px-6 md:px-10 md:w-3/5 mx-auto">
+    <h2
+      class="text-white text-4xl md:text-5xl font-bold uppercase mb-6 md:mb-10 animated opacity-0 -translate-x-full transition-all duration-700 ease-in-out text-center"
+    >
+      Our Products
+    </h2>
+
+    <p
+      class="text-white text-xl md:text-3xl mb-8 md:mb-10 animated opacity-0 -translate-x-full transition-all duration-700 ease-in-out text-center max-w-2xl"
+    >
+      Market leading technologies to enable the highest conversion efficiencies
+    </p>
+
+    <aside
+      class="flex flex-col lg:flex-row items-center justify-center gap-10 w-full animated opacity-0 transition-all duration-700 ease-in-out"
+    >
+      <div
+        class="flex flex-col justify-center py-10 px-6 bg-[#00000033] w-full lg:w-1/2 rounded-3xl prose"
+      >
+        <h3
+          class="text-center animated opacity-0 transition-all duration-700 ease-in-out text-white text-3xl md:text-4xl font-semibold"
+        >
+          Modules Cells
+        </h3>
+        <p
+          class="text-white text-base md:text-xl font-bold animated opacity-0 -translate-x-full transition-all duration-700 ease-in-out"
+        >
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore similique sed consectetur
+          minima quos delectus aperiam voluptatibus natus quas iusto, rerum molestias sint,
+          consequuntur placeat enim, sunt recusandae saepe unde.
+        </p>
+        <p
+          class="text-white text-base md:text-xl font-bold animated opacity-0 -translate-x-full transition-all duration-700 ease-in-out"
+        >
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore similique sed consectetur
+          minima quos delectus aperiam voluptatibus natus quas iusto, rerum molestias sint,
+          consequuntur placeat enim, sunt recusandae saepe unde.
+        </p>
+      </div>
+
+      <img
+        class="w-full max-w-sm md:max-w-md lg:max-w-lg animated opacity-0 -translate-x-full transition-all duration-700 ease-in-out"
+        src="/imagenes/paneles.png"
+        alt="panel solar"
+      />
+    </aside>
+  </section>
+  <section class="my-44 px-6 md:px-10">
+    <h2 class="text-white text-5xl font-bold uppercase mb-10 text-center">Our Services</h2>
+    <main class="flex flex-col items-center gap-4">
+      <ServiceCard
+        class="md:w-3/5 animated animated-in-left opacity-0 transition-all duration-700 ease-in-out"
+      >
+        <img src="/imagenes/roofing.jpeg" alt="roofing" slot="image" class="w-full" height="1000" />
+        <h4 slot="title" class="text-3xl">Residential Solar Installation and Maintenance</h4>
+        <p slot="content" class="text-lg">
+          Why aren’t you getting the best service if you're paying massive electric bills? With all
+          the revenue the big utility firms are making, why isn’t that profit being reinvested into
+          a more reliable grid? We aren’t the ones to sit around waiting for an answer. Neither are
+          you. Instead, you can choose a leader among solar panel companies and generate clean
+          energy on your rooftop.
+        </p>
+      </ServiceCard>
+      <ServiceCard
+        class="md:w-3/5 md:flex-row-reverse animated opacity-0 transition-all duration-700 ease-in-out"
+      >
+        <img
+          src="/imagenes/comercial.jpeg"
+          alt="roofing"
+          slot="image"
+          height="500"
+          class="w-full"
+        />
+        <h4 slot="title" class="text-3xl">Commercial Solar Installation and Maintenance</h4>
+        <p slot="content" class="text-lg">
+          We install solar energy solutions that leverage the latest technologies to ensure
+          reliability. Solar energy can dramatically reduce and even eliminate your monthly electric
+          bill yearly. When production is high, you can only pay your electric utility provider a
+          hookup charge. With net metering, you can even export excess solar energy back to the grid
+          for credits on your account.
+        </p>
+      </ServiceCard>
+    </main>
+  </section>
+</main>
