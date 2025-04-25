@@ -2,7 +2,7 @@
 import PrimaryButton from "../components/PrimaryButton.astro";
 ---
 
-<header class="relative min-h-[75vh]">
+<header class="relative min-h-[75vh]" id="index">
   <!-- Capa oscura -->
   <div
     class="absolute inset-0 bg-[linear-gradient(180deg,#0C1836_26%,#F2295B00_100%)] opacity-75 z-10"
@@ -26,15 +26,16 @@ import PrimaryButton from "../components/PrimaryButton.astro";
       <h1
         class="text-white text-3xl xl:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight sm:leading-tight md:leading-snug"
       >
-        Bringing Solar Power to Every Home and Business
+        Clean Energy Solutions for a Brighter Future
         <span class="block text-base sm:text-xl md:text-2xl font-normal mt-4">
           Leading the Way in Global Solar Innovation
         </span>
       </h1>
     </main>
-
     <PrimaryButton>
-      <span class="uppercase text-sm sm:text-base md:text-lg">Get A Free Quote</span>
+      <a href="#contact">
+        <span class="uppercase text-sm sm:text-base md:text-lg">Get A Free Quote</span>
+      </a>
     </PrimaryButton>
   </section>
 </header>

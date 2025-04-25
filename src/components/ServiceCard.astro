@@ -3,7 +3,7 @@ const { class: className = "" } = Astro.props;
 ---
 
 <section
-  class={`flex flex-col-reverse 2xl:flex-row justify-center items-center bg-[#f5f7fa] px-6 md:px-20 py-20 gap-12 ${className}`}
+  class={`flex flex-col-reverse xl:flex-row justify-center items-center bg-[#f5f7fa] px-6 md:px-20 py-20 gap-12 ${className}`}
 >
   <article
     class="flex flex-col gap-8 w-full 2xl:w-3/5 text-center md:text-left prose justify-between"
@@ -12,7 +12,7 @@ const { class: className = "" } = Astro.props;
     <slot name="content" />
   </article>
 
-  <div class="w-full 2xl:w-2/5 flex justify-center">
+  <div class="w-full 2xl:w-3/5 flex justify-center">
     <slot name="image" />
   </div>
 </section>

@@ -2,15 +2,16 @@
 import PrimaryButton from "./PrimaryButton.astro";
 const fields = [
   { id: "name", label: "Name", type: "text" },
+  { id: "phone", label: "Phone", type: "tel" },
   { id: "email", label: "Email", type: "email" },
   { id: "message", label: "Message", type: "textarea" },
 ];
 ---
 
 <section
-  class="relative min-h-3/5 flex items-center justify-center bg-[url('/imagenes/contacto-fondo.jpg')] bg-no-repeat bg-bottom bg-cover py-52 px-6"
+  class="relative min-h-3/5 flex items-center justify-center bg-[url('/imagenes/contacto-fondo.jpeg')] bg-no-repeat bg-bottom bg-cover py-52 px-6"
 >
-  <div class="absolute inset-0 bg-[#00000044]"></div>
+  <div class="absolute inset-0 bg-[#00000044]" id="contact"></div>
   <form
     class="z-20 bg-[#ffffff] shadow-2xl p-10 w-full max-w-2xl flex flex-col gap-6 border border-primary-tranparent"
   >
