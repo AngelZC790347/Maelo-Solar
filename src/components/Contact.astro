@@ -14,6 +14,7 @@ const fields = [
   <div class="absolute inset-0 bg-[#00000044]" id="contact"></div>
   <form
     class="z-20 bg-[#ffffff] shadow-2xl p-10 w-full max-w-2xl flex flex-col gap-6 border border-primary-tranparent"
+    method="post"
   >
     <h2 class="text-3xl font-bold text-center text-primary">Contact Us</h2>
     <span class="mx-auto">We look forward to hearing from you.</span>
@@ -45,7 +46,7 @@ const fields = [
       ))
     }
     <div class="mt-10 text-center">
-      <PrimaryButton>Submit</PrimaryButton>
+      <PrimaryButton type="submit">Submit</PrimaryButton>
     </div>
   </form>
 </section>
