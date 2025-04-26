@@ -5,15 +5,15 @@
     </li>
     <ul id="nav" class="uppercase flex-row align-bottom 2xl:gap-16 gap-10 text-dark hidden xl:flex">
       <li data-nav="home" class="current-location">
-        <a class="hover:border-primary hover:border-b-2 transition duration-200" href="/"> Home</a>
+        <a class="hover:border-primary hover:border-0 transition duration-200" href="/"> Home</a>
       </li>
       <li data-nav="about">
-        <a class="hover:border-primary hover:border-b-2 transition duration-200" href="#about">
+        <a class="hover:border-primary hover:border-b-0 transition duration-200" href="#about">
           About Us</a
         >
       </li>
       <li data-nav="contact">
-        <a class="hover:border-primary hover:border-b-2 transition duration-200" href="#contact">
+        <a class="hover:border-primary hover:border-b-0 transition duration-200" href="#contact">
           Contact Us</a
         >
       </li>
@@ -30,8 +30,14 @@
     display: flex;
     align-items: center;
   }
+  a {
+    border-bottom: 2px solid transparent;
+    transition:
+      border-color 0.2s ease,
+      padding-bottom 0.2s ease;
+  }
   .current-location a {
-    border-bottom: 2px solid var(--color-primary);
+    border-bottom-color: var(--color-primary);
   }
 </style>
 <script>
